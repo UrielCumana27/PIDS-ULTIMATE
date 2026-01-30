@@ -1,0 +1,18 @@
+# robots.txt para PIDS - Plataforma de Inclusión Digital Senior
+
+# Permitir que todos los motores de búsqueda indexen todo el sitio
+User-agent: *
+Disallow: /admin/  # Bloquea la sección administrativa
+Disallow: /login/  # Bloquea el acceso a la página de login
+Disallow: /editar/  # Bloquea el acceso a la página de edición
+
+# Permitir acceso a las siguientes rutas específicas
+Allow: /guias/
+Allow: /contacto/
+
+# Evitar que se indexen ciertas URL de recursos temporales
+Disallow: /tmp/
+Disallow: /cache/
+
+# El sitio es seguro y se puede rastrear completamente por los motores de búsqueda
+Sitemap: https://www.tusitio.com/sitemap.xml
